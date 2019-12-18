@@ -1,4 +1,4 @@
 <div>
-    <input placeholder="Search image">
-    <button (click)="searchImages('apple')">Search</button>
+    <input placeholder="Search image"[(ngModel)] = "searchStr">
+    <button (click)="searchImages()">Search</button>
 </div>

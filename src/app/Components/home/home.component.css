@@ -1,0 +1,36 @@
+nav{
+    display:flex;
+    padding:10px 5px;
+}
+.logo-box{
+    color:white;
+}
+.hero-box{
+    position: relative;
+    top:20%;
+    text-align:center;
+}
+.search-sec{
+    position: relative;
+    top:20%;
+    text-align:center;
+}
+.hero-tl{
+    color:#f2f2f2;
+}
+.hero-box p{
+    color: #dbdbdb;
+}
+.jumbotron{
+    padding-top:0;
+    height: 85vh;
+    background: url('../../images/forest-2.jpg');
+    background-size:cover;
+    background-position:center;
+}
+.searchbox{
+    padding:9px;
+    border:solid white 1px;
+    border-radius: 3px;
+    width:50vw;
+}

@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ImagesComponent } from './Components/images/images.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './Components/home/home.component';
        
 @NgModule({
   declarations: [
     AppComponent,
-    ImagesComponent
+    ImagesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ export class ImagesService {
   constructor(private http:HttpClient) { }
   private ApiKey: string = environment.API_KEY;
   private Url: string = environment.URL;
-  private searchTxt:string;
+  searchTxt:string;
 
   getImages(searchTxt):Observable<any[]>{
     return this.http.get<any[]>(`${this.Url}${this.ApiKey}&q=${this.searchTxt}&image_type=photo`);
