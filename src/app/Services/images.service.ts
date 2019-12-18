@@ -12,8 +12,8 @@ export class ImagesService {
   private Url: string = environment.URL;
   searchTxt:string;
 
-  getImages(searchTxt):Observable<any[]>{
-    return this.http.get<any[]>(`${this.Url}${this.ApiKey}&q=${this.searchTxt}&image_type=photo`);
+  getImages():Observable<any[]>{
+    return this.http.get<any[]>(`${this.Url}${this.ApiKey}&image_type=photo`);
   }
 
 }

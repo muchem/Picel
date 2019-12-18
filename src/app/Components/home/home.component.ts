@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ImagesService } from '../../Services/images.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service:ImagesService) { }
+  results;
   ngOnInit() {
+    this.service.getImages().subscribe(image =>{
+     this.results=image.hits;
+     console.log(this.results);
+    })
   }
 
 }

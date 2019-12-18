@@ -17,3 +17,13 @@
         <input class = "searchbox"placeholder = "Search Images...">
     </div>
 </div>
+<div class = "container-fluid">
+    <div class ="row">
+        <div class = "col-lg-4 col-md-2"*ngFor = "let img of results">
+            <div class = "img-box">
+            <img src='{{img.largeImageURL}}'>
+        </div>
+
+        </div>
+    </div>
+</div>
