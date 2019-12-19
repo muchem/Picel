@@ -8,11 +8,10 @@ import { ImagesService } from '../../Services/images.service';
 export class HomeComponent implements OnInit {
 
   constructor(private service:ImagesService) { }
-  results;
+  results=[];
   ngOnInit() {
     this.service.getImages().subscribe(image =>{
      this.results=image.hits;
-     console.log(this.results);
     })
   }
 
