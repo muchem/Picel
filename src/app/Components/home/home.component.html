@@ -10,7 +10,7 @@
         </div>
     </nav>
     <div class = "hero-box">
-        <h2 class = "hero-tl">Get stunning free images here.</h2>
+        <h2 class = "hero-tl">Get stunning images for free here.</h2>
         <p>Over 1 million+ high quality stock images and videos shared by our talented community.</p>
     </div>
     <div class = "search-sec">
@@ -21,7 +21,9 @@
     <div class ="row">
         <div class = "col-lg-4 col-md-2"*ngFor = "let img of results">
             <div class = "img-box">
+                <a href = "{{img.pageURL}}" target = "_blank">
             <img src='{{img.largeImageURL}}'>
+            </a>
         </div>
 
         </div>
