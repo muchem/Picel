@@ -5,6 +5,9 @@ nav{
 .logo-box{
     color:white;
 }
+.logo-box h3{
+    font-family: 'Courier Prime', monospace;
+}
 .hero-box{
     position: relative;
     top:20%;
