@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 })
 export class ImagesService {
   constructor(private http:HttpClient) { }
-  private ApiKey: string = environment.API_KEY;
-  private Url: string = environment.URL;
+  private ApiKey: string ='?key=13875463-5946a46e49401d6e5a6de2d2b';
+  private Url: string = 'https://pixabay.com/api/';
   searchTxt:string;
-
+  
   getImages():Observable<any>{
     return this.http.get<any>(`${this.Url}${this.ApiKey}&image_type=photo`);
   }
